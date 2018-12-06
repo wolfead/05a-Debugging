@@ -6,13 +6,13 @@ does not do the right thing.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Valerie Galluzzi, Mark Hays, Amanda Stouder, Aaron Wilkin,
-         their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues, and Alex Wolfe.
+"""  # done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 ###############################################################################
 #
-# TODO: 2. READ these instructions, ASKING QUESTIONS as needed.
+# done: 2. READ these instructions, ASKING QUESTIONS as needed.
 #
 #   This module contains "broken" functions, as in m1 and m2.
 #   FOLLOW THE SAME STEPS as in the instructions of m1.py
@@ -44,6 +44,7 @@ def main():
     """ Calls the   TEST   functions in this module. """
 
 
+    run_test_broken_1()
 ###############################################################################
 # Students:
 #   Do NOT touch the following  is_prime  function - it has no _TODO_.
@@ -121,13 +122,13 @@ def broken_1(m):
     """
     #    **  For full credit you must appropriately
     #    **  use (call) the   is_prime   function that is DEFINED ABOVE.
+
     count = 0
-    for k in range(2 * m):
-        if is_prime(m):
+    for k in range(m+1):
+        if is_prime(k+m)== True:
             count = count + 1
-
-
+    return count
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
-    main()
+main()
