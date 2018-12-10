@@ -348,6 +348,7 @@ def broken_7(n, point, length, distance_between_lines, window):
         line.attach_to(window)
         left = rg.Point(left.x, left.y + distance_between_lines)
         right = rg.Point(right.x, right.y + distance_between_lines)
+        window.render(0.5)
     window.render(0.5)
 
 
@@ -356,4 +357,3 @@ def broken_7(n, point, length, distance_between_lines, window):
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
 main()
- 
